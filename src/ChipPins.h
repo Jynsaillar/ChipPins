@@ -3,6 +3,7 @@
 
 #include "PinTypes.h"
 #include "ActivationTypes.h"
+#include "Signals.h"
 
 namespace Jynsaillar::ChipPins
 {
@@ -14,7 +15,7 @@ namespace Jynsaillar::ChipPins
         bool Enabled;                                   // Pin enabled/disabled?
         PinTypes::PinType PinType;                      // NC/Analog/Digital?
         ActivationTypes::ActivationType ActivationType; // Active Low/Active High?
-        Signal Signal;                                  // Low/High/HighImpedance?
+        Signals::Signal Signal;                         // Low/High/HighImpedance?
 
         operator bool() const;
     };
