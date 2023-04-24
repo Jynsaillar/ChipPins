@@ -6,8 +6,9 @@ namespace Jynsaillar::ChipPins
     {
         if (!this->Enabled)
             return false;
-
-        return (this->Signal == Signals::High); // Allows for quick comparison of a pin's logic state, without the need to access the underlying ChipPin.Signal
+        // Allows for quick comparison of a pin's logic state using if/else,
+        // without the need to access the underlying ChipPin.Signal.
+        return (this->Signal == Signals::High);
     }
 
 } // namespace Jynsaillar::ChipPins
