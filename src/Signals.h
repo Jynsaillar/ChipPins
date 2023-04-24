@@ -8,7 +8,7 @@ namespace Jynsaillar::Signals
         Low = 0,
         High = 1,
         HighImpedance = 2
-    }
+    };
 } // namespace Jynsaillar::Signals
 
 #endif // __SIGNALS_H__
