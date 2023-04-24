@@ -3,9 +3,9 @@
 
 namespace Jynsaillar::PinTypes
 {
-    enum PinType 
+    enum PinType
     {
-        NC = 0, // [N]ot [C]onnected
+        NC = 0,     // [N]ot [C]onnected
         Analog = 1, // Analog signals, for analog-digital-converter pins
         Digital = 2 // Purely digital signals, LOW & HIGH
     };
