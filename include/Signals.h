@@ -5,6 +5,7 @@ namespace Jynsaillar::Signals
 {
     enum Signal
     {
+        None = -1,
         Low = 0,
         High = 1,
         HighImpedance = 2

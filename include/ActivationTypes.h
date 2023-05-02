@@ -5,6 +5,7 @@ namespace Jynsaillar::ActivationTypes
 {
     enum ActivationType
     {
+        None = -1,
         ActiveLow = 0,
         ActiveHigh = 1
     };
