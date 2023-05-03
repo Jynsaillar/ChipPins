@@ -4,6 +4,7 @@
 #include "PinTypes.h"
 #include "ActivationTypes.h"
 #include "Signals.h"
+#include <cstdint>
 
 namespace Jynsaillar::ChipPins
 {
@@ -11,6 +12,8 @@ namespace Jynsaillar::ChipPins
     {
     private:
     public:
+        uint8_t Number;                                 // Pin number
+        uint8_t ProxyPin;                               // Pin on an external device (e.g. an Arduino) that the signal should be redirected to (e.g. via Arduino 'digitalWrite(...)' function)
         const char *Name;                               // Pin name, e.g. CE, SCL, SDA, CS, ...
         bool Enabled;                                   // Pin enabled/disabled?
         PinTypes::PinType PinType;                      // NC/Analog/Digital?
